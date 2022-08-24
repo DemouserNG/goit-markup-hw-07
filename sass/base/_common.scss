@@ -1,0 +1,23 @@
+body {
+    color: var(--primery-text-color, black);
+    background-color: var(--primery-bg-color, white);
+    font-family: 'Roboto', sans-serif;
+
+}
+.list {
+    list-style: none;
+}
+
+.link {
+    text-decoration: none;
+}
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+
+}

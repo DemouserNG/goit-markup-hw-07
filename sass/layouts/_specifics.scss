@@ -1,0 +1,36 @@
+.specifics-list {
+    display: flex;
+    gap: 30px;
+}
+
+.specifics-items {
+    width: 270px;
+}
+
+.specifics-feature {
+    height: 120px;
+    border-radius: 4px;
+    background-color: #F5F4FA;
+    padding: 25px 100px;
+    margin-bottom: 30px;
+}
+
+.specifics-title {
+    margin-bottom: 10px;
+
+    color: var(--primery-text-color, black);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+}
+
+.specifics-text {
+
+    color: var(--text-color, grey);
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
