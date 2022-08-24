@@ -1,59 +1,59 @@
 .team {
     background-color: #F5F4FA;
+
+    &-title {
+        margin-bottom: 50px;
+        color: var(--primery-text-color, black);
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 1.17;
+        letter-spacing: 0.03em;
+        text-align: center;
+    }
+
+    &-list {
+        display: flex;
+        gap: 30px;
+    }
+
+    &-items {
+        width: calc((100% - 90px) / 4);
+    }
+
+    &-card {
+        background-color: var(--primery-bg-color, white);
+        border-radius: 0px 0px 4px 4px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        max-width: 270px;
+        text-align: center;
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+            0px 1px 1px rgba(0, 0, 0, 0.14),
+            0px 2px 1px rgba(0, 0, 0, 0.2);
+    }
+
+    &-name {
+        min-width: 130px;
+        margin-bottom: 10px;
+
+        color: var(--primery-text-color, black);
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 1.19;
+        letter-spacing: 0.03em;
+    }
+
+    &-text {
+        min-width: 130px;
+        margin-bottom: 16px;
+
+        color: var(--text-color, grey);
+        line-height: 1.19;
+        letter-spacing: 0.03em;
+    }
+
 }
 
-.team-title {
-    margin-bottom: 50px;
-    color: var(--primery-text-color, black);
-    font-size: 36px;
-    font-weight: 700;
-    line-height: 1.17;
-    letter-spacing: 0.03em;
-    text-align: center;
-}
-
-.team-list {
-    display: flex;
-    gap: 30px;
-
-}
-
-.team-items {
-    width: calc((100% - 90px) / 4);
-}
-
-.team-card {
-    background-color: var(--primery-bg-color, white);
-    border-radius: 0px 0px 4px 4px;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    max-width: 270px;
-    text-align: center;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
-        0px 1px 1px rgba(0, 0, 0, 0.14),
-        0px 2px 1px rgba(0, 0, 0, 0.2);
-}
-
-.team-name {
-    min-width: 130px;
-    margin-bottom: 10px;
-
-    color: var(--primery-text-color, black);
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 1.19;
-    letter-spacing: 0.03em;
-
-}
-
-.team-text {
-    min-width: 130px;
-    margin-bottom: 16px;
-
-    color: var(--text-color, grey);
-    line-height: 1.19;
-    letter-spacing: 0.03em;
-}
 .actions {
     display: flex;
     padding: 0;
@@ -73,19 +73,20 @@
     background-color: #FFFFFF;
     border-radius: 50%;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        background-color: var(--accent);
+    }
 }
 
-.link-icon:hover,
-.link-icon:focus {
-    background-color: var(--accent);
-}
-
-.link-icon:hover .icon,
-.link-icon:focus .icon {
-    fill: #FFFFFF;
-}
 
 .icon {
     fill: #AFB1B8;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    .link-icon:hover &,
+    .link-icon:focus & {
+        fill: #FFFFFF;
+    }
 }
