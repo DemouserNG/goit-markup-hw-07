@@ -26,6 +26,12 @@
     transform: translate(-50%, -50%) scale(0);
 }
 
+.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
 .btn-modal-close {
     width: 30px;
     height: 30px;
@@ -41,18 +47,13 @@
     cursor: pointer;
 }
 
-.is-hidden {
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
-}
-
 .icon-close-black {
     fill: currentColor;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.icon-close-black:hover,
-.icon-close-black:focus {
-    fill: var(--accent);
+    &:hover,
+    &:focus {
+        fill: var(--accent);
+    }
+
 }
