@@ -3,21 +3,22 @@
     gap: 30px;
 }
 
-.specifics-items {
+.specifics-list__items {
     width: 270px;
 }
 
-.specifics-feature {
+.features {
     height: 120px;
     border-radius: 4px;
     background-color: #F5F4FA;
-    padding: 25px 100px;
-    margin-bottom: 30px;
+    padding: 25px 100px;   
+}
+.features-specifics {
+   margin-bottom: 30px;
 }
 
-.specifics-title {
+.specifics-list__title {
     margin-bottom: 10px;
-
     color: var(--primery-text-color, black);
     font-size: 14px;
     font-weight: 700;
@@ -26,9 +27,7 @@
     text-transform: uppercase;
 
 }
-
-.specifics-text {
-
+.specifics-list__text {
     color: var(--text-color, grey);
     font-size: 14px;
     line-height: 1.71;
